@@ -3,12 +3,13 @@
 <head>
     <title>{% block title %}Django на Хекслете{% endblock %}</title>
 </head>
+{% block alert%}{% endblock %}
 <body>
 <div id="sidebar">
     {% block sidebar %}
         <ul>
             <li><a href="{% url 'home' %}">Главная</a></li>
-            <li><a href="{% url 'index' %}">Статьи</a></li>
+            <li><a href="{% url 'articles' %}">Статьи</a></li>
         </ul>
     {% endblock %}
 </div>

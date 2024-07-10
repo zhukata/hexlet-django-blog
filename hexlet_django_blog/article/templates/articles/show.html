@@ -3,4 +3,5 @@
 {% block content %}
      <h1>{{ article.name }}</h1>
     <div>{{ article.body }}</div>
+    <div><a href="{% url 'comment_article' %}">Add Comment</a></div>
 {% endblock %}
